@@ -1,4 +1,4 @@
-module visionApi
+module vision-api-go
 
 go 1.23.0
 

@@ -1,26 +1,13 @@
 package utils
 
 import (
-	"log"
-
-	"github.com/otiai10/gosseract/v2"
+	"os/exec"
 )
 
-func ExtractTextFromImage(imagePath string) string {
-	client := gosseract.NewClient()
-	defer client.Close()
-
-	err := client.SetImage(imagePath)
+func ExtractText(imagePath string) string {
+	out, err := exec.Command("tesseract", imagePath, "stdout").Output()
 	if err != nil {
-		log.Println("OCR SetImage error:", err)
-		return ""
+		return "OCR failed"
 	}
-
-	text, err := client.Text()
-	if err != nil {
-		log.Println("OCR Text error:", err)
-		return ""
-	}
-
-	return text
+	return string(out)
 }

@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "6f9550c5-e6e0-43f4-8978-97b9e74a4ca2",
+		"name": "GolangFourth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "37836406"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [				
+				{
+					"name": "ImageCompare",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Pawan Kumar\",\n    \"email\":\"pawankum@gmail.com\",\n    \"age\":37\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/users"
+					},
+					"response": [
+						{
+							"name": "userList",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"Pawan Kumar\",\n    \"email\":\"pawankum@gmail.com\",\n    \"age\":37\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "localhost:8080/users"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 23 Apr 2025 06:11:52 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "204"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": 2,\n            \"name\": \"Pawan Kumar Kumar\",\n            \"email\": \"pawankum@gmail.com\",\n            \"age\": 33\n        },\n        {\n            \"id\": 3,\n            \"name\": \"Manoj Kumar\",\n            \"email\": \"manoj90@gmail.com\",\n            \"age\": 33\n        }\n    ],\n    \"message\": \"Users fetched successfully\",\n    \"status\": true\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": {
+			"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFqYXlAZ21haWwuY29tIiwiZXhwIjoxNzQ1NDc2MzA3fQ.hxxWk1zOGfdR8A2RMc0-jYszfiWUoFQdq55szIVe8oI"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

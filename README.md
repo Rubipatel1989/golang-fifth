@@ -8,6 +8,7 @@ Vision API For Face deduction
 
     go mod tidy
     go run main.go
+    
 ## [In Ubuntu main]
     sudo apt update
     sudo apt install tesseract-ocr 
@@ -15,3 +16,7 @@ Vision API For Face deduction
     sudo apt install -y tesseract-ocr libtesseract-dev libleptonica-dev
 
 
+## Face++ Website For key
+Username - pawank
+Password - Bsa@123456
+![alt text](image.png)
